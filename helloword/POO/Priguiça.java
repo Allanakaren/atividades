@@ -2,26 +2,30 @@ package POO;
 
 public class Priguiça extends Animal{
 
-	private String subiremarvores;
 	
-	public Priguiça (String nome, String idade, String som, String subiremarvores)
+	
+	public Priguiça()
 	{
-		super(nome,idade,som);
-		this.subiremarvores = subiremarvores;
+		super("Tipo Animal: Preguiça");
+		
 	}
 
-	public String getSubiremarvores() {
-		return subiremarvores;
-	}
-
-	public void setSubiremarvores(String subiremarvores) {
-		this.subiremarvores = subiremarvores;
-	}
-	
-	public void imprimirPriguiça()
-	{
-		System.out.println("\nNome: "+getNome()+"\nIdade: "+getIdade()+"\nSom: "+getSom()+"\nAbilidade de: "+subiremarvores);
-	}
-	
+	 @Override 
+	 public void nome(String nomeAnimal)
+	 {
+		 System.out.println("\nNome do seu Preguiça: "+nomeAnimal);
+	 }
+	 
+	 @Override
+	 public void idade(String idadeAnimal)
+	 {
+		 System.out.println("\nQual a idade do seu Preguiça: "+idadeAnimal);
+	 }
+	 
+	 @Override
+	 public void som(String somAnimal)
+	 {
+		 System.out.println("\nQual somo sua Preguiça faz: "+somAnimal);
+	 }
 	
 }

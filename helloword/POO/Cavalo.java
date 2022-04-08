@@ -2,29 +2,31 @@ package POO;
 
 public class Cavalo extends Animal{
 
-	private String crina;
 	
-	public Cavalo(String nome, String idade, String som, String crina)
+	
+	public Cavalo()
 	{
-		super(nome,idade,som);
-		this.crina = crina;
+		super("Tipo Animal: Cavalo");
+		
 	}
 
-	public String getCrina() {
-		return crina;
-	}
-
-	public void setCrina(String crina) {
-		this.crina = crina;
-	}
-	
-	public void imprimeCavalo()
-	{
-		System.out.println("\nNome: "+getNome()+"\nIdade: "+getIdade()+"\nSom: "+getSom()+"\nAbilidade de Correr: "+crina);
-	}
-	
-	
-	
+	 @Override 
+	 public void nome(String nomeAnimal)
+	 {
+		 System.out.println("\nNome do seu Cavalo: "+nomeAnimal);
+	 }
+	 
+	 @Override
+	 public void idade(String idadeAnimal)
+	 {
+		 System.out.println("\nQual a idade do seu Cavalo: "+idadeAnimal);
+	 }
+	 
+	 @Override
+	 public void som(String somAnimal)
+	 {
+		 System.out.println("\nQual somo seu Cavalo faz? "+somAnimal);
+	 }
 	
 	
 }

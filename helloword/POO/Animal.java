@@ -1,39 +1,33 @@
 package POO;
 
-public class Animal {
+// criando classe abstract
 
-	private String nome;
-	private String idade;
-	private String som;
+public abstract class Animal {
+
+	private String tipoAnimal;
 	
 	
-	public Animal(String nome, String idade, String som) 
+	
+	public Animal(String tipoAnimal)
 	{
-		super();
-        this.nome = nome;
-		this.idade = idade;
-		this.som = som;
-		
+        this.tipoAnimal = tipoAnimal;	
 	}
 	
-	public String getNome() {
-		return nome;
+	abstract public void nome(String nomeAnimal);
+	abstract public void idade(String idadeAnimal);
+	abstract public void som(String somAnimal);
+
+	public String getTipoAnimal() {
+		return tipoAnimal;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+
+	public void setTipoAnimal(String tipoAnimal) {
+		this.tipoAnimal = tipoAnimal;
 	}
-	public String getIdade() {
-		return idade;
-	}
-	public void setIdade(String idade) {
-		this.idade = idade;
-	}
-	public String getSom() {
-		return som;
-	}
-	public void setSom(String som) {
-		this.som = som;
-	}
+	
+	
+	
+	
 	
 	
 }
